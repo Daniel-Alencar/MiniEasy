@@ -1,0 +1,27 @@
+Referencias,Qtd,Valor,Footprint,Observacao
+C1,1,100u/25V,Capacitor_SMD:CP_Elec_6.3x7.7,
+C2,1,10u/25V,Capacitor_SMD:C_0805_2012Metric,
+C3,1,10u,Capacitor_SMD:C_0805_2012Metric,
+"C4,C5,C6,C7,C9,C11,C12,C13,C15",9,100n,Capacitor_SMD:C_0603_1608Metric,
+"C8,C10,C14",3,1u,Capacitor_SMD:C_0603_1608Metric,
+"C16,C17",2,10n,Capacitor_SMD:C_0603_1608Metric,
+"D1,D2,D3",3,B5819W,Diode_SMD:D_SOD-123,Schottky 40 V 1 A
+D4,1,LED verde,LED_SMD:LED_0603_1608Metric,
+J1,1,BAT 4-16 V,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,"borne a parafuso 2 vias, passo 5,08 mm"
+J2,1,SWD,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,3V3 / SWDIO / SWCLK / NRST / GND
+J3,1,USB micro-B,Connector_USB:USB_Micro-B_Molex_47346-0001,download de dados e DFU
+J4,1,PIRO APOGEU,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,"borne a parafuso 2 vias, passo 5,08 mm"
+J5,1,PIRO PRINCIPAL,TerminalBlock:TerminalBlock_bornier-2_P5.08mm,"borne a parafuso 2 vias, passo 5,08 mm"
+JP1,1,BOOT0,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,fechar para entrar no bootloader USB
+LS1,1,CMT-8504-100-SMT,Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT,buzzer magnetico SMD 3 V
+"Q1,Q2",2,AO3400A,Package_TO_SOT_SMD:SOT-23,MOSFET canal N logico
+Q3,1,BSS138,Package_TO_SOT_SMD:SOT-23,MOSFET canal N logico
+"R1,R6,R7,R9,R10,R13,R14,R17",8,100k,Resistor_SMD:R_0603_1608Metric,
+"R2,R3,R4,R5,R11,R15",6,10k,Resistor_SMD:R_0603_1608Metric,
+"R8,R12,R16",3,100R,Resistor_SMD:R_0603_1608Metric,
+R18,1,1k,Resistor_SMD:R_0603_1608Metric,
+U1,1,MCP1703A-3302E/MB,Package_TO_SOT_SMD:SOT-89-3,"LDO 3V3 250 mA, Vin<=16 V, Iq 2 uA"
+U2,1,STM32F042K6T6,Package_QFP:LQFP-32_7x7mm_P0.8mm,"Cortex-M0, 32 kB flash, USB device sem cristal"
+U3,1,MS5607-02BA03,Package_LGA:LGA-8_3x5mm_P1.25mm,"barometro 10-1200 mbar, 24 bit, resolucao 20 cm"
+U4,1,W25Q16JVSSIQ,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm,flash SPI 16 Mbit para o registro de voo
+U5,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,protecao ESD das linhas D+/D-
