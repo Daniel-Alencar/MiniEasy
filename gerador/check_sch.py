@@ -38,7 +38,8 @@ def main():
                         for p in sub:
                             if isinstance(p, list) and p[0] == "pin":
                                 num = at = None
-                                hide = "hide" in p
+                                hide = "hide" in p or any(
+                                    isinstance(q, list) and q[:2] == ["hide", "yes"] for q in p)
                                 for q in p:
                                     if isinstance(q, list) and q[0] == "number":
                                         num = unq(q[1])

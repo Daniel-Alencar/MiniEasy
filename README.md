@@ -1,6 +1,6 @@
 # Altímetro de dois eventos — classe EasyMini
 
-Esquemático KiCad 8 de um altímetro barométrico de recuperação dupla (apogeu +
+Esquemático KiCad 10 de um altímetro barométrico de recuperação dupla (apogeu +
 principal), equivalente em função ao Altus Metrum EasyMini: sensor barométrico,
 registro de voo em flash, dois canais pirotécnicos com teste de continuidade,
 download por USB. Sem GPS, sem acelerômetro, sem telemetria.
@@ -9,9 +9,10 @@ Arquivos:
 
 | arquivo | conteúdo |
 |---|---|
-| `altimetro.kicad_sch` | esquemático, folha única A2, símbolos embutidos |
-| `altimetro.kicad_pro` | projeto KiCad 8 (inclui netclass `PIRO` de 1,0 mm) |
-| `bom.csv` | lista de materiais, 54 componentes em 26 linhas |
+| `altimetro.kicad_sch` | esquemático, folha única A2, formato nativo KiCad 10 |
+| `altimetro.kicad_pro` | projeto (inclui netclass `PIRO` de 1,0 mm) |
+| `altimetro.pdf` | plotagem do esquemático |
+| `bom.csv` | lista de materiais exportada pelo KiCad, 54 componentes |
 | `gerador/` | scripts que geram e verificam o esquemático |
 
 ## Arquitetura
@@ -57,7 +58,9 @@ memória, USB, canal A, canal B, aviso sonoro.
 
 Pinagens conferidas contra o datasheet: pino 17 é VDDIO2 e pino 16 é VSS (ST
 STM32F042x4/x6); MS5607-02BA03 pino 4 = CSB e pino 5 = conexão interna, ambos no
-mesmo net (datasheet TE, seção *Pin Configuration*).
+mesmo net (datasheet TE, seção *Pin Configuration*). Atenção ao MCP1703: a
+numeração muda com o encapsulamento — em SOT-89 é 1 = GND, 2 = VIN, 3 = VOUT
+(em SOT-223 o pino 1 é VIN).
 
 ## Decisões de projeto
 
@@ -138,15 +141,25 @@ anodo à direita e `VSYS` sai pelo catodo à esquerda.
 5. Reserve lugar para fixar a bateria e os fios dos ignitores: são eles que
    sofrem a aceleração, não os componentes SMD.
 
+## Verificação
+
+`gerador/verificar.sh` gera o esquemático a partir das bibliotecas do KiCad
+instalado e só grava o resultado se tudo passar:
+
+1. o gerador recusa pino sem net e sem *no connect*, pino em dois nets, e dois
+   símbolos de alimentação no mesmo ponto;
+2. `check_sch.py` reextrai a netlist da geometria do arquivo e compara com a
+   tabela `NETS`;
+3. `check_layout.py` procura sobreposição de símbolos e rótulos e itens fora da
+   folha;
+4. `kicad-cli sch upgrade` converte para o formato nativo;
+5. ERC do KiCad com todas as severidades — **0 erros, 0 avisos**;
+6. `netcheck.py` compara a netlist exportada pelo próprio KiCad com a tabela
+   `NETS` e confere cada footprint contra o filtro de footprint do símbolo;
+7. exporta `altimetro.pdf` e `bom.csv`.
+
 ## O que não está feito
 
-- **ERC não foi executado.** Não há KiCad instalado nesta máquina. A validação
-  feita foi: (a) parse e round-trip do arquivo com `kiutils`; (b) extração da
-  netlist a partir da geometria do arquivo e comparação com a tabela de nets
-  (`gerador/check_sch.py`); (c) verificação de sobreposição de símbolos e
-  rótulos e de limites da folha (`gerador/check_layout.py`). Rode `Inspect →
-  Electrical Rules Checker` ao abrir — flags de alimentação e *no connect* já
-  estão postos, então deve passar limpo.
 - PCB, firmware e certificação.
 - Proteção contra inversão de polaridade da bateria: D1 protege só o ramo de
   3V3. Os bornes pirotécnicos estão em `VBAT` direto, então bateria invertida
@@ -159,14 +172,8 @@ anodo à direita e `VSYS` sai pelo catodo à esquerda.
 ## Regenerar
 
 ```sh
-# baixe os símbolos oficiais da versão 8:
-curl -L -o syms.tar.gz \
-  https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/8.0.9/kicad-symbols-8.0.9.tar.gz
-tar xzf syms.tar.gz
-
-python3 -I gerador/gen_sch.py kicad-symbols-8.0.9 altimetro.kicad_sch
-python3 -I gerador/check_sch.py altimetro.kicad_sch      # netlist == tabela NETS
-python3 -I gerador/check_layout.py altimetro.kicad_sch   # sobreposições
+gerador/verificar.sh                      # usa /usr/share/kicad/symbols
+gerador/verificar.sh /caminho/symbols     # outra instalação
 ```
 
 A tabela `NETS` em `gerador/gen_sch.py` é a fonte da verdade das ligações: o

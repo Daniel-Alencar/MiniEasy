@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Gera o esquematico KiCad 8 do altimetro (clone funcional do EasyMini).
+"""Gera o esquematico KiCad do altimetro (clone funcional do EasyMini).
 
-Uso: python3 -I gen_sch.py <dir-libs-kicad-symbols-8.0.9> <saida.kicad_sch>
+Uso: python3 -I gen_sch.py <dir-dos-simbolos-do-kicad> <saida.kicad_sch>
 
 Simbolos sao achatados e embutidos em (lib_symbols), de modo que o arquivo abre
 sem precisar das bibliotecas instaladas. Conexoes sao feitas por rotulos (labels)
@@ -41,11 +41,11 @@ C0603 = "Capacitor_SMD:C_0603_1608Metric"
 C0805 = "Capacitor_SMD:C_0805_2012Metric"
 SOT23 = "Package_TO_SOT_SMD:SOT-23"
 SOD123 = "Diode_SMD:D_SOD-123"
-TBLOCK = "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+TBLOCK = "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 
 # ---- B1: alimentacao e protecao -------------------------------------------
-B1 = (40.0, 45.0)
-add("J1", "Connector_Generic", "Conn_01x02", "BAT 4-16 V", TBLOCK, cell(*B1, 0, 0))
+B1 = (40.64, 45.72)
+add("J1", "Connector", "Screw_Terminal_01x02", "BAT 4-16 V", TBLOCK, cell(*B1, 0, 0))
 add("D1", "Device", "D_Schottky", "B5819W", SOD123, cell(*B1, 1, 0))
 add("D2", "Device", "D_Schottky", "B5819W", SOD123, cell(*B1, 2, 0))
 add("U1", "Regulator_Linear", "MCP1703Ax-330xxMB", "MCP1703A-3302E/MB",
@@ -59,10 +59,9 @@ add("R1", "Device", "R", "100k", R0603, cell(*B1, 0, 2))
 add("R2", "Device", "R", "10k", R0603, cell(*B1, 1, 2))
 add("#FLG1", "power", "PWR_FLAG", "PWR_FLAG", "", cell(*B1, 2, 2))
 add("#FLG2", "power", "PWR_FLAG", "PWR_FLAG", "", cell(*B1, 3, 2))
-add("#FLG3", "power", "PWR_FLAG", "PWR_FLAG", "", cell(*B1, 4, 2))
 
 # ---- B2: MCU ---------------------------------------------------------------
-B2 = (200.0, 45.0)
+B2 = (200.66, 45.72)
 add("C6", "Device", "C", "100n", C0603, cell(*B2, 0, 0))
 add("C7", "Device", "C", "100n", C0603, cell(*B2, 1, 0))
 add("C8", "Device", "C", "1u", C0603, cell(*B2, 0, 1))
@@ -73,7 +72,7 @@ add("R3", "Device", "R", "10k", R0603, cell(*B2, 0, 3))
 add("JP1", "Jumper", "SolderJumper_2_Open", "BOOT0",
     "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm", cell(*B2, 1, 3))
 add("J2", "Connector_Generic", "Conn_01x05", "SWD",
-    "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical", (200.0, 167.64))
+    "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical", (200.66, 167.64))
 add("U2", "MCU_ST_STM32F0", "STM32F042K6Tx", "STM32F042K6T6",
     "Package_QFP:LQFP-32_7x7mm_P0.8mm", (276.86, 95.25))
 
@@ -82,7 +81,7 @@ add("U3", "Sensor_Pressure", "MS5607-02BA", "MS5607-02BA03",
     "Package_LGA:LGA-8_3x5mm_P1.25mm", (400.05, 48.26))
 add("C12", "Device", "C", "100n", C0603, (438.15, 48.26))
 add("U4", "Memory_Flash", "W25Q16JVSS", "W25Q16JVSSIQ",
-    "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm", (480.06, 48.26))
+    "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm", (480.06, 48.26))
 add("R4", "Device", "R", "10k", R0603, (520.7, 48.26))
 add("R5", "Device", "R", "10k", R0603, (551.18, 48.26))
 add("C13", "Device", "C", "100n", C0603, (480.06, 110.49))
@@ -99,10 +98,10 @@ add("R7", "Device", "R", "100k", R0603, (530.86, 240.03))
 
 # ---- B5/B6: canais pirotecnicos --------------------------------------------
 for idx, (B, j, q, rs, cs) in enumerate([
-        ((40.0, 167.64), "J4", "Q1", ("R8", "R9", "R10", "R11"), "C16"),
-        ((40.0, 256.54), "J5", "Q2", ("R12", "R13", "R14", "R15"), "C17")]):
+        ((40.64, 167.64), "J4", "Q1", ("R8", "R9", "R10", "R11"), "C16"),
+        ((40.64, 256.54), "J5", "Q2", ("R12", "R13", "R14", "R15"), "C17")]):
     nome = "APOGEU" if idx == 0 else "PRINCIPAL"
-    add(j, "Connector_Generic", "Conn_01x02", "PIRO %s" % nome, TBLOCK, cell(*B, 0, 0))
+    add(j, "Connector", "Screw_Terminal_01x02", "PIRO %s" % nome, TBLOCK, cell(*B, 0, 0))
     add(q, "Transistor_FET", "AO3400A", "AO3400A", SOT23, cell(*B, 1, 0))
     add(rs[0], "Device", "R", "100R", R0603, cell(*B, 2, 0))
     add(rs[1], "Device", "R", "100k", R0603, cell(*B, 3, 0))
@@ -111,7 +110,7 @@ for idx, (B, j, q, rs, cs) in enumerate([
     add(rs[3], "Device", "R", "10k", R0603, cell(*B, 3, 1))
 
 # ---- B7: aviso sonoro + LED ------------------------------------------------
-B7 = (40.0, 345.44)
+B7 = (40.64, 345.44)
 add("LS1", "Device", "Buzzer", "CMT-8504-100-SMT",
     "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT", cell(*B7, 0, 0))
 add("Q3", "Transistor_FET", "BSS138", "BSS138", SOT23, cell(*B7, 1, 0))
@@ -123,21 +122,21 @@ add("D4", "Device", "LED", "LED verde", "LED_SMD:LED_0603_1608Metric", cell(*B7,
 
 # ---------------------------------------------------------------------- nets
 NETS = {
-    "GND": [("J1", "2"), ("C1", "2"), ("C2", "2"), ("U1", "2"), ("C3", "2"), ("C4", "2"),
+    "GND": [("J1", "2"), ("C1", "2"), ("C2", "2"), ("U1", "1"), ("C3", "2"), ("C4", "2"),
             ("C5", "2"), ("R2", "2"), ("U2", "16"), ("U2", "32"), ("C6", "2"), ("C7", "2"),
             ("C8", "2"), ("C9", "2"), ("C10", "2"), ("C11", "2"), ("R3", "2"), ("J2", "5"),
             ("U3", "2"), ("U3", "3"), ("C12", "2"), ("U4", "4"), ("C13", "2"),
-            ("J3", "5"), ("J3", "6"), ("U5", "2"), ("C14", "2"), ("C15", "2"), ("R7", "2"),
+            ("J3", "5"), ("J3", "SH"), ("U5", "2"), ("C14", "2"), ("C15", "2"), ("R7", "2"),
             ("Q1", "2"), ("R9", "2"), ("R11", "2"), ("C16", "2"),
             ("Q2", "2"), ("R13", "2"), ("R15", "2"), ("C17", "2"),
-            ("Q3", "2"), ("R17", "2"), ("#FLG3", "1")],
+            ("Q3", "2"), ("R17", "2")],
     "+3V3": [("U1", "3"), ("C3", "1"), ("C4", "1"), ("U2", "1"), ("U2", "5"), ("U2", "17"),
              ("C6", "1"), ("C7", "1"), ("C8", "1"), ("C9", "1"), ("C10", "1"), ("J2", "1"),
              ("JP1", "1"), ("U3", "1"), ("C12", "1"), ("U4", "8"), ("C13", "1"),
              ("R4", "1"), ("R5", "1"), ("LS1", "1"), ("D3", "1"), ("R18", "1")],
     "VBAT": [("J1", "1"), ("D1", "2"), ("C1", "1"), ("R1", "1"), ("J4", "1"), ("J5", "1"),
              ("#FLG1", "1")],
-    "VSYS": [("D1", "1"), ("D2", "1"), ("C2", "1"), ("U1", "1"), ("#FLG2", "1")],
+    "VSYS": [("D1", "1"), ("D2", "1"), ("C2", "1"), ("U1", "2"), ("#FLG2", "1")],
     "VBUS": [("J3", "1"), ("D2", "2"), ("U5", "5"), ("C14", "1"), ("C15", "1"), ("R6", "1")],
     "VB_SNS": [("R1", "2"), ("R2", "1"), ("C5", "1"), ("U2", "8")],
     "NRST": [("U2", "4"), ("C11", "1"), ("J2", "4")],
@@ -240,7 +239,8 @@ def pins_of(base):
         if isinstance(sub, list) and sub[0] == "symbol":
             for p in sub:
                 if isinstance(p, list) and p[0] == "pin":
-                    hidden = "hide" in p
+                    hidden = "hide" in p or any(isinstance(q, list) and q[:2] == ["hide", "yes"]
+                                                for q in p)
                     num = nm = None
                     at = None
                     for q in p:
@@ -354,8 +354,9 @@ def main():
     keys += [tuple(pw.split(":")) for pw in POWER_NETS.values()]
     for key in keys:
         if key not in geom:
-            _sym, base = collect_symbol(libdir, key[0], key[1])
+            sym, base = collect_symbol(libdir, key[0], key[1])
             geom[key] = pins_of(base)
+            LIBPROPS[key] = lib_props(sym)
 
     # mapa pino -> net; valida cobertura total
     pinnet = {}
@@ -419,6 +420,7 @@ def main():
 
     # fios, rotulos, simbolos de alimentacao, no-connects
     npower = 0
+    pwr_list = []
     seg_owner = {}
     pwr_pts = {}
     for c in COMPS:
@@ -459,9 +461,9 @@ def main():
                 pwr_pts[pf] = tag
                 ox, oy = pp["at"][0], -pp["at"][1]
                 npower += 1
-                E(sym_instance(dict(ref="#PWR%02d" % npower, lib=lib, sym=name, val=net,
-                                    fp="", x=round(pf[0] - ox, 2), y=round(pf[1] - oy, 2),
-                                    rot=0, desc=None), uid("pw" + tag), hide_ref=True))
+                pwr_list.append((dict(ref="#PWR%02d" % npower, lib=lib, sym=name, val=net,
+                                      fp="", x=round(pf[0] - ox, 2), y=round(pf[1] - oy, 2),
+                                      rot=0, desc=None), uid("pw" + tag)))
             else:
                 ang, just = label_angle(sx, sy)
                 ex, ey = pts[-1]
@@ -479,6 +481,16 @@ def main():
                   '\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n'
                   '\t\t(uuid "%s")\n\t)'
                   % (a[0], a[1], b[0], b[1], uid("w%s_%d" % (tag, i))))
+
+    # valor visivel so no primeiro de cada grupo de simbolos iguais vizinhos
+    # (ex.: VDD/VDDA/VDDIO2 do U2 a 2,54 mm um do outro)
+    visiveis = []
+    for c, u in sorted(pwr_list, key=lambda t: (t[0]["y"], t[0]["x"])):
+        perto = any(v["val"] == c["val"] and abs(v["x"] - c["x"]) < 7.7 and abs(v["y"] - c["y"]) < 5.1
+                    for v in visiveis)
+        if not perto:
+            visiveis.append(c)
+        E(sym_instance(c, u, hide_ref=True, hide_value=perto))
 
     # simbolos
     for c in COMPS:
@@ -511,14 +523,41 @@ def main():
     return 0
 
 
-def sym_instance(c, u, hide_ref=False):
-    hid = "\n\t\t\t\t(hide yes)" if hide_ref else ""
+LIBPROPS = {}   # (lib, simbolo) -> {campo: (x, y, angulo, effects)}
+
+
+def lib_props(sym):
+    out = {}
+    for q in sym:
+        if isinstance(q, list) and q[0] == "property":
+            at = eff = None
+            for r in q:
+                if isinstance(r, list) and r[0] == "at":
+                    at = (float(r[1]), float(r[2]), r[3] if len(r) > 3 else "0")
+                elif isinstance(r, list) and r[0] == "effects":
+                    eff = r
+            out[unq(q[1])] = (at, eff)
+    return out
+
+
+def effects_with(eff, hide):
+    """Copia (effects ...) da biblioteca trocando apenas o estado de visibilidade."""
+    if eff is None:
+        eff = ["effects", ["font", ["size", "1.27", "1.27"]]]
+    body = [x for x in eff[1:] if x != "hide" and not (isinstance(x, list) and x[0] == "hide")]
+    if hide:
+        body.append(["hide", "yes"])
+    return dump(["effects"] + body, 3)
+
+
+def sym_instance(c, u, hide_ref=False, hide_value=False):
+    lp = LIBPROPS[(c["lib"], c["sym"])]
     props = [
-        ('Reference', c["ref"], 0, -1, hid),
-        ('Value', c["val"], 0, 1, ""),
-        ('Footprint', c["fp"], 0, 0, "\n\t\t\t\t(hide yes)"),
-        ('Datasheet', "~", 0, 0, "\n\t\t\t\t(hide yes)"),
-        ('Description', c["desc"] or "", 0, 0, "\n\t\t\t\t(hide yes)"),
+        ("Reference", c["ref"], hide_ref),
+        ("Value", c["val"], hide_value),
+        ("Footprint", c["fp"], True),
+        ("Datasheet", "~", True),
+        ("Description", c["desc"] or "", True),
     ]
     out = ['\t(symbol',
            '\t\t(lib_id "%s:%s")' % (c["lib"], c["sym"]),
@@ -528,12 +567,14 @@ def sym_instance(c, u, hide_ref=False):
            '\t\t(in_bom %s)' % ("no" if c["ref"].startswith("#") else "yes"),
            '\t\t(on_board %s)' % ("no" if c["ref"].startswith("#") else "yes"),
            '\t\t(dnp no)',
-           '\t\t(fields_autoplaced yes)',
            '\t\t(uuid "%s")' % u]
-    for nm, val, dx, dy, extra in props:
-        out.append('\t\t(property "%s" "%s"\n\t\t\t(at %s %s 0)\n\t\t\t(effects\n'
-                   '\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)%s\n\t\t\t)\n\t\t)'
-                   % (nm, val, c["x"] + dx, round(c["y"] + dy * 12.0, 2), extra))
+    for nm, val, hide in props:
+        at, eff = lp.get(nm, ((0.0, 0.0, "0"), None))
+        if c["rot"] != 0:
+            raise SystemExit("campos so sao posicionados para rotacao 0")
+        x, y = round(c["x"] + at[0], 2), round(c["y"] - at[1], 2)
+        out.append('\t\t(property "%s" "%s"\n\t\t\t(at %s %s %s)\n%s\n\t\t)'
+                   % (nm, val, x, y, at[2], effects_with(eff, hide)))
     out.append('\t\t(instances\n\t\t\t(project "altimetro"\n\t\t\t\t(path "/%s"\n'
                '\t\t\t\t\t(reference "%s")\n\t\t\t\t\t(unit 1)\n\t\t\t\t)\n\t\t\t)\n\t\t)'
                % (uid("sheet"), c["ref"]))
