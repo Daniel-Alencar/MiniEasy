@@ -1,0 +1,9 @@
+(version 1)
+
+# O micro-USB (J3) e montado avancando sobre a borda da placa, como manda o
+# footprint (marca "PCB Edge"). A serigrafia dele cruza a borda e a fabrica a
+# corta; nao e defeito.
+(rule "J3 avanca sobre a borda"
+  (layer F.Silkscreen)
+  (condition "A.memberOfFootprint('J3') && B.Layer == 'Edge.Cuts'")
+  (constraint silk_clearance (min -2mm)))

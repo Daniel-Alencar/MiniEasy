@@ -7937,10 +7937,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ec553ec-76d8-426a-9b4f-2c922ec810dc")
+			(uuid "96282190-7f6b-4b0c-9213-6c359051e126")
 		)
 		(pin "2"
-			(uuid "a490576f-1fed-41a5-b6c0-87a40feede05")
+			(uuid "a171372c-b487-4347-82d4-8b56da1c5b64")
 		)
 		(instances
 			(project "altimetro"
@@ -8017,7 +8017,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d03b3756-de0d-424d-89a6-aabd189a8cc2")
+			(uuid "5116722a-47fa-472d-b48c-0348e37fdfd9")
 		)
 		(instances
 			(project "altimetro"
@@ -8094,7 +8094,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e2095d2b-f8d5-4853-9f09-247788e01d7d")
+			(uuid "f9c0d3fa-625b-4a30-bb89-0eefa7038570")
 		)
 		(instances
 			(project "altimetro"
@@ -8170,10 +8170,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "17210368-4517-4e88-9449-947d3c825c8e")
+			(uuid "94183738-4079-4abf-a401-c1a150dadb9a")
 		)
 		(pin "2"
-			(uuid "c98b62a2-f3de-4154-a5d7-bd7000a4589c")
+			(uuid "344042b2-48bd-4b43-9c4c-61e1feebaebe")
 		)
 		(instances
 			(project "altimetro"
@@ -8250,7 +8250,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d254221-1275-42e1-bd01-4c2172b4aa2c")
+			(uuid "ebf8edf4-7838-44b5-a97d-d83c18df3d67")
 		)
 		(instances
 			(project "altimetro"
@@ -8327,7 +8327,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "7d30be5b-6f72-4e82-87b4-3ad7d0c396f4")
+			(uuid "7632d4c8-d6bf-43e6-b47e-db130f7f33ad")
 		)
 		(instances
 			(project "altimetro"
@@ -8408,13 +8408,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "d25a5ab9-dea3-41d2-87e2-8de0ef3a5c51")
+			(uuid "87835d67-899c-4f0e-b939-7cc385badcd4")
 		)
 		(pin "2"
-			(uuid "9caba77a-e5c5-4078-b3d9-d1612f5264db")
+			(uuid "0379a04e-ed1f-46b0-8549-b118fa249e21")
 		)
 		(pin "3"
-			(uuid "c488574f-7de4-41f7-921e-1d81abfe891a")
+			(uuid "06a67f20-046b-4c07-aa19-0cb3ab9fda1e")
 		)
 		(instances
 			(project "altimetro"
@@ -8492,10 +8492,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d19efe57-2a1e-4890-afb5-b70139b2e884")
+			(uuid "67d17d28-ec6e-4399-bc52-0e97e8ed9668")
 		)
 		(pin "2"
-			(uuid "b7cf8248-9995-4a02-baf7-abe485697151")
+			(uuid "a8a229c1-7a70-4b04-b257-dea5e922c300")
 		)
 		(instances
 			(project "altimetro"
@@ -8572,7 +8572,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "748aaf7d-a060-4825-a131-7e0b7836f567")
+			(uuid "9e6a7abd-3373-4c43-835c-39f2027762a6")
 		)
 		(instances
 			(project "altimetro"
@@ -8649,7 +8649,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "441d1d75-fee4-4159-8f3e-9ec38736f12c")
+			(uuid "cd2011c7-db59-4ee9-bf40-34b3c4e7ab56")
 		)
 		(instances
 			(project "altimetro"
@@ -8727,10 +8727,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6bd4742e-79ee-4aea-933a-a55d4602ae2b")
+			(uuid "ced060c3-dbe2-432d-8426-fae02414005b")
 		)
 		(pin "2"
-			(uuid "72060251-7dbc-4d7a-97d7-7267a37c63ac")
+			(uuid "9ef8bade-c185-4243-91d2-d84d7c420bb8")
 		)
 		(instances
 			(project "altimetro"
@@ -8807,7 +8807,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "834be839-6eba-4168-bfe2-19c1223253b8")
+			(uuid "ced2f5db-528c-4b66-8b41-abaf0ffb456a")
 		)
 		(instances
 			(project "altimetro"
@@ -8884,7 +8884,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "465baf28-06d7-42a9-a0b0-5b17a4f8f225")
+			(uuid "2af12aa0-9384-4b62-9f45-ebbea94dfd6a")
 		)
 		(instances
 			(project "altimetro"
@@ -8961,7 +8961,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "68d6c7da-e688-4dad-8295-a798bbe174be")
+			(uuid "000e2c12-33b3-4000-9ec9-4b130edcb298")
 		)
 		(instances
 			(project "altimetro"
@@ -9038,7 +9038,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c216252e-4315-4001-9cc5-db8906813b03")
+			(uuid "74115143-f499-4f9d-8b55-37dd45f084e8")
 		)
 		(instances
 			(project "altimetro"
@@ -9115,7 +9115,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b997c632-37c7-40b8-aadc-cb02e31d8092")
+			(uuid "85cb8635-b9d3-45b4-bdd3-520e8c51179d")
 		)
 		(instances
 			(project "altimetro"
@@ -9193,10 +9193,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "13aef38c-d1d5-4635-a6d9-4f362960bc3d")
+			(uuid "b98d3729-f5d6-46f8-86a9-6162493c4d80")
 		)
 		(pin "2"
-			(uuid "139ff4cf-b216-425e-beb2-2e62c05812ee")
+			(uuid "57712ecc-0971-43cc-b6c4-856bc72e9053")
 		)
 		(instances
 			(project "altimetro"
@@ -9273,7 +9273,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ef34fb4-6fe4-43e7-aa01-8ee46887cdcd")
+			(uuid "dd959ca0-2f19-41b7-a7bc-dd2566f994f6")
 		)
 		(instances
 			(project "altimetro"
@@ -9354,13 +9354,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "a941a6d2-c8b2-4033-b207-d437b4218db1")
+			(uuid "9265bdd4-d489-47b4-8e73-a38515b37677")
 		)
 		(pin "2"
-			(uuid "ab33a39c-e750-4ea1-a926-177fd24f4120")
+			(uuid "a532c1d6-f0a3-4981-b0d7-8e82e69137d9")
 		)
 		(pin "3"
-			(uuid "33e32f74-3ddc-4857-a90c-1f4d856f698d")
+			(uuid "f09c0eec-883f-4ae1-9ab6-4ebfbdafec10")
 		)
 		(instances
 			(project "altimetro"
@@ -9437,7 +9437,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f562a67-9300-40d8-ba0d-305ecaf9cd7f")
+			(uuid "955b8fa4-186b-4e4f-a0fa-b2917f14234d")
 		)
 		(instances
 			(project "altimetro"
@@ -9513,10 +9513,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b1d25ae-da1a-4afb-92a3-06db10983f0d")
+			(uuid "be6ceddc-d2d3-493d-92d7-0f6787175dcc")
 		)
 		(pin "2"
-			(uuid "a4383b80-6852-432f-a380-78e06bbf53ba")
+			(uuid "5281bcc7-8fad-4f8b-9448-24aa2068ab1c")
 		)
 		(instances
 			(project "altimetro"
@@ -9593,7 +9593,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f83f2431-5341-4c90-bd92-9443c0663698")
+			(uuid "16653be6-0013-48cc-b0b2-f4e0ce2db1dd")
 		)
 		(instances
 			(project "altimetro"
@@ -9670,7 +9670,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f33942d6-4774-4fd8-a100-c8da26a9e785")
+			(uuid "a167ce66-b924-4530-9064-244180c12175")
 		)
 		(instances
 			(project "altimetro"
@@ -9746,10 +9746,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "357abf25-6469-4652-bdea-fe31c93022a6")
+			(uuid "1693a1c0-280b-4e6e-bb09-279ed60bae04")
 		)
 		(pin "2"
-			(uuid "d50f38b0-438e-4ba7-8e9e-285cc158a643")
+			(uuid "af88d118-5d13-45c1-a4a7-10fa8fe5ba1b")
 		)
 		(instances
 			(project "altimetro"
@@ -9826,7 +9826,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ebc037d-527b-4530-8a6a-9cfa6c671279")
+			(uuid "32ccf7d3-51b7-4a0a-b1c8-d616f6ba9813")
 		)
 		(instances
 			(project "altimetro"
@@ -9903,7 +9903,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a95cbeed-799c-4fba-a710-64a48655b31b")
+			(uuid "e36a5268-a9e8-4764-8153-3791ff5d551e")
 		)
 		(instances
 			(project "altimetro"
@@ -9980,7 +9980,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b44a6b8c-83e8-4107-a8d6-25bb9ad3185e")
+			(uuid "ffeed47e-815d-4571-9486-b291db740e10")
 		)
 		(instances
 			(project "altimetro"
@@ -10057,7 +10057,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "26c36d58-8af2-4599-a2d0-f458a01d73b4")
+			(uuid "9838ed4e-72f8-4449-a3fb-b8197073bd84")
 		)
 		(instances
 			(project "altimetro"
@@ -10133,10 +10133,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "20202c26-43a4-450f-8947-2b22f1accfef")
+			(uuid "1c0b1208-bdd6-47cb-8c5b-37abf5611d0f")
 		)
 		(pin "2"
-			(uuid "16bfe2a2-573a-4263-8a9b-7176ce911353")
+			(uuid "37ba4147-a85b-437d-b44e-b8b8fcbe0a09")
 		)
 		(instances
 			(project "altimetro"
@@ -10213,7 +10213,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc8749e7-84f5-4dfa-acee-b4bccb03be6e")
+			(uuid "427d19dc-9a2e-4b95-9718-983819fbdc7c")
 		)
 		(instances
 			(project "altimetro"
@@ -10291,7 +10291,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6694b37-f991-4ab0-a816-d1415d81bb6b")
+			(uuid "18703195-7991-43fd-a18f-e70b395525e1")
 		)
 		(instances
 			(project "altimetro"
@@ -10367,10 +10367,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3b4d6f6-c6e1-4c03-b3e2-f321f10dd642")
+			(uuid "a4f83a57-600a-4ad4-8119-4f541451acf0")
 		)
 		(pin "2"
-			(uuid "ffc9c164-f70d-4a80-8ff6-e14d8e9fe334")
+			(uuid "5bd31254-1a45-4995-b730-4c72f81d939d")
 		)
 		(instances
 			(project "altimetro"
@@ -10447,7 +10447,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9682b783-740c-4f91-8339-2971fe55ca0f")
+			(uuid "604cae0b-b738-440a-b56e-451ed0da9fde")
 		)
 		(instances
 			(project "altimetro"
@@ -10525,10 +10525,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "92b281a8-49c0-42bf-8e3a-929ebaca03be")
+			(uuid "7723a259-6c0a-4d52-822c-6834cbbe12ad")
 		)
 		(pin "2"
-			(uuid "16b9a9b5-c9ea-4e22-8571-2d89ca5ca890")
+			(uuid "f9b1af98-6335-44f8-b640-d09a1f04e4e3")
 		)
 		(instances
 			(project "altimetro"
@@ -10605,7 +10605,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d16d3ab4-59b2-4a65-b749-47bde50595e7")
+			(uuid "9009d9df-61fa-459c-99bf-4e86208f3fb3")
 		)
 		(instances
 			(project "altimetro"
@@ -10684,100 +10684,100 @@
 			)
 		)
 		(pin "1"
-			(uuid "56d0b052-60b9-44a2-bf33-0849a4bc7c7e")
+			(uuid "74810221-1051-4dcc-aa5b-d1a5493148d4")
 		)
 		(pin "2"
-			(uuid "6fd24833-1362-4378-961c-29bb000e2ffd")
+			(uuid "b4656d6f-7635-461b-92ae-31d108ad5863")
 		)
 		(pin "3"
-			(uuid "bdc38758-738f-4035-9b70-df45b69d3d87")
+			(uuid "cf944d6d-07f0-424b-a39d-950428a46acf")
 		)
 		(pin "4"
-			(uuid "34d1ad4b-a1f3-4467-8360-578c47166230")
+			(uuid "46e202da-d0d0-4364-b033-2341e7fa0beb")
 		)
 		(pin "5"
-			(uuid "6c459d82-893a-4949-9325-5d1250eb5bb6")
+			(uuid "d3527d57-69c3-4e64-b0c1-59f0484a0476")
 		)
 		(pin "6"
-			(uuid "c16c54db-4b98-4272-86b8-46d9037ed80e")
+			(uuid "eee3786f-14e0-4e6e-9278-39ee02061dd6")
 		)
 		(pin "7"
-			(uuid "79479dba-eeea-49bc-a95d-ea7570e43c03")
+			(uuid "74f6e2c8-9e57-4c61-af66-d84c273e645a")
 		)
 		(pin "8"
-			(uuid "637afa27-d934-4164-9f18-abd7f0983275")
+			(uuid "e453f3d5-c10c-47b0-8f7c-58d5e9bc2ddf")
 		)
 		(pin "9"
-			(uuid "5fe2e1fa-1c5c-4240-97b8-572680ec813e")
+			(uuid "7ab32a10-6cd0-49eb-bf65-72ad000756fe")
 		)
 		(pin "10"
-			(uuid "1ccb71b4-db04-4971-a6e1-738a4b74895a")
+			(uuid "974f2616-9628-4662-b672-84be1fad3da6")
 		)
 		(pin "11"
-			(uuid "7a81e179-a3ed-4024-b921-bef355a8650c")
+			(uuid "c049b993-a945-47dc-bf90-ebae40e6e00c")
 		)
 		(pin "12"
-			(uuid "e0fff74e-ea31-4bd1-8cba-643f50f344c4")
+			(uuid "4f38c30c-d5e4-4698-8243-225ec0b338bf")
 		)
 		(pin "13"
-			(uuid "3e34dada-b46b-45f3-bd17-efb9055f2d13")
+			(uuid "022d4aea-5244-425a-9529-a7d9b514bebc")
 		)
 		(pin "14"
-			(uuid "53522c0c-af44-4f4c-9a0e-618cc851131b")
+			(uuid "4a29d13c-c222-4d33-8877-39779644e994")
 		)
 		(pin "15"
-			(uuid "fc352ae5-edad-478c-9210-e24bc88497e9")
+			(uuid "5ea75fa7-0dea-4383-bfed-89b8369a393d")
 		)
 		(pin "16"
-			(uuid "912b58f5-e755-4c24-83e2-16ee85e7a000")
+			(uuid "8081847e-e598-4736-9d95-e9f658355797")
 		)
 		(pin "17"
-			(uuid "23f996e2-11c0-4ed5-b3ec-18c0ad6dd9ce")
+			(uuid "cad755ea-6cbc-4c17-9f4b-dae25d4924a0")
 		)
 		(pin "18"
-			(uuid "e30ce7cf-a569-4802-b122-6393e494efad")
+			(uuid "3f6a27df-730d-44fa-9537-908b0392499e")
 		)
 		(pin "19"
-			(uuid "9f53ef91-7a43-4e97-af52-bf2f0ec785d7")
+			(uuid "81a28021-a3ee-4fd5-bda2-3a1af3cf27ac")
 		)
 		(pin "20"
-			(uuid "2f309f1b-749b-444c-ba0c-f94e6f94f900")
+			(uuid "a03012ee-a47e-4125-a8c1-b19ed00bc348")
 		)
 		(pin "21"
-			(uuid "edb924b3-0128-4330-bdff-5ec182d5b9c5")
+			(uuid "45cf6de7-7bd9-490d-9139-42a713e728b1")
 		)
 		(pin "22"
-			(uuid "60104aac-65fb-4343-99c3-707d00679414")
+			(uuid "c50600e9-e7c2-4ffa-93f9-05674f034969")
 		)
 		(pin "23"
-			(uuid "6c3fa1d3-6757-420b-9101-96bd8aa0f4c9")
+			(uuid "a80f50a1-c9c5-46d3-b70b-f12715eddf82")
 		)
 		(pin "24"
-			(uuid "3bb75357-00f8-490e-a124-979922f955b5")
+			(uuid "0a614273-6011-4666-9889-56811e32c919")
 		)
 		(pin "25"
-			(uuid "49b5032b-b082-49e2-904c-809382c38b84")
+			(uuid "fea68690-08b8-47d8-9f79-f654efb94847")
 		)
 		(pin "26"
-			(uuid "2bbbd62c-5ecb-4996-b50d-3af87bdc8c38")
+			(uuid "1b7ed658-ced7-4d32-b85c-212bfe02e46b")
 		)
 		(pin "27"
-			(uuid "b428828d-42ec-49eb-b0d3-98fd5fe5ea62")
+			(uuid "5890f8fa-f196-40d6-81d2-711d4db08bb3")
 		)
 		(pin "28"
-			(uuid "5b5c0a97-a861-4c9f-982b-182abf71b16f")
+			(uuid "2290dd8a-828c-48bb-961f-b5b7e8935d69")
 		)
 		(pin "29"
-			(uuid "d45f42ec-33ab-4947-bee4-c1bc2f71ba2b")
+			(uuid "5b0d5f58-7f09-45b2-83e8-2250a2647d06")
 		)
 		(pin "30"
-			(uuid "bc4c2b88-2c4d-4b36-a1af-9f285008ebd6")
+			(uuid "3da5f75b-879d-40ed-9af6-485ad759be2e")
 		)
 		(pin "31"
-			(uuid "dbb681e3-80b1-4097-8711-629c9898f27e")
+			(uuid "6f026c51-61cc-445e-b14c-c86eb35f535e")
 		)
 		(pin "32"
-			(uuid "b4b9d454-b367-4ab0-96f6-efab2f9ddc7c")
+			(uuid "b5c24049-6267-49c8-ac1a-2313974f3d12")
 		)
 		(instances
 			(project "altimetro"
@@ -10853,10 +10853,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c774abda-3865-46e8-965a-cc45fdb7b9c8")
+			(uuid "fa339c26-67cf-4599-981d-a32cac9e5388")
 		)
 		(pin "2"
-			(uuid "2e092054-e5b6-4e3a-98ac-98fa036d4f64")
+			(uuid "5fc1a6d0-c28a-40c1-899e-55872ead8741")
 		)
 		(instances
 			(project "altimetro"
@@ -10932,10 +10932,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e09f3c29-029d-4949-8cbb-13b14baceb4b")
+			(uuid "f917bceb-f212-4c51-9e34-3fdb16e501f4")
 		)
 		(pin "2"
-			(uuid "dbaf07b1-a3d2-46a1-a6c3-4a8a8e53ab54")
+			(uuid "3dcd5c0a-936e-460c-9cbd-abe5aee86f53")
 		)
 		(instances
 			(project "altimetro"
@@ -10977,7 +10977,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal"
 			(at 40.64 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -11011,10 +11011,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e1c21462-cbab-47d8-90d9-ef4f6f14bd3c")
+			(uuid "666e5bd1-fa6d-45d1-bd96-1bd11f36ddae")
 		)
 		(pin "2"
-			(uuid "25956c22-7582-4011-b460-96c84ba5fa4d")
+			(uuid "8ae06f87-a408-4748-ae39-fb2b344d66f1")
 		)
 		(instances
 			(project "altimetro"
@@ -11092,10 +11092,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7d8ad83d-5be8-4d78-8a6d-bdc3f4b7c5e0")
+			(uuid "6043c7f8-07a0-45c4-99b4-95c16bf10d1d")
 		)
 		(pin "2"
-			(uuid "2bf9c908-179d-4690-9ea9-4796755f810b")
+			(uuid "56909217-deb1-47bb-b747-86b01939c6bf")
 		)
 		(instances
 			(project "altimetro"
@@ -11173,10 +11173,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "a9b0b2a0-7915-4b3b-8a23-7695aa30c921")
+			(uuid "e2371a5e-4f85-499b-88ab-d34659fb0a60")
 		)
 		(pin "2"
-			(uuid "f6cd25b1-9368-4772-b3a0-d4f58aaa0ce3")
+			(uuid "ece357bd-476f-4a6b-b033-1df4ad2c4840")
 		)
 		(instances
 			(project "altimetro"
@@ -11253,7 +11253,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7149277-0661-43e1-a5f9-f52dd41bf21f")
+			(uuid "48ddad52-7f8b-4a62-9962-f39781e085a4")
 		)
 		(instances
 			(project "altimetro"
@@ -11331,10 +11331,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf176e2d-d054-43cf-8bab-f1fb3273a2a2")
+			(uuid "90dec80c-4eec-4459-81e9-0b93afbd80ee")
 		)
 		(pin "2"
-			(uuid "c5625d7a-e36d-44da-9a3b-8f6c6d923ad9")
+			(uuid "99776d61-d7d1-485f-bfe1-6e2f34497bd4")
 		)
 		(instances
 			(project "altimetro"
@@ -11411,7 +11411,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "22179a61-ec12-4790-95fd-f5d73836d0d6")
+			(uuid "175148b1-0796-40f1-88cc-7ae532d1cde1")
 		)
 		(instances
 			(project "altimetro"
@@ -11488,7 +11488,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1d17483-b06e-4873-915b-205e34e7d1d7")
+			(uuid "a9cc1ac1-6f2f-46c9-9ec2-688596378d4b")
 		)
 		(instances
 			(project "altimetro"
@@ -11565,7 +11565,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "cd32970c-37aa-4003-b944-6fa2cb2b1164")
+			(uuid "3f4b1360-1db1-4b95-b99d-bef69c50d304")
 		)
 		(instances
 			(project "altimetro"
@@ -11643,7 +11643,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "54630fd0-d016-48e1-9c08-2a6abff35176")
+			(uuid "6e77beb3-654f-4976-b1eb-cb066cf736fb")
 		)
 		(instances
 			(project "altimetro"
@@ -11719,10 +11719,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "cdbbdfb9-e282-4bc4-a26c-8d1cf75a2198")
+			(uuid "75739fba-cdcb-4045-8570-9ebe27a512a9")
 		)
 		(pin "2"
-			(uuid "a4f53426-af50-4f04-b116-f9f3cab19825")
+			(uuid "bc6aaf1c-d6c0-416b-8ea3-ffc7de093d25")
 		)
 		(instances
 			(project "altimetro"
@@ -11739,7 +11739,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11798,10 +11798,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "84514f11-7f22-4996-a26f-dbb925c43266")
+			(uuid "07c2032e-37ca-4336-b013-703d9d59a16a")
 		)
 		(pin "2"
-			(uuid "6013e1d9-ae2c-496a-80f9-55d9632d83eb")
+			(uuid "aa987c08-6ba3-4ee1-a55d-f93ea17dc154")
 		)
 		(instances
 			(project "altimetro"
@@ -11878,7 +11878,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "58b54aab-4222-426e-8417-690f461f594d")
+			(uuid "c5ab1053-26a0-4994-854c-948ae4005abc")
 		)
 		(instances
 			(project "altimetro"
@@ -11954,19 +11954,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "d4e2dfeb-b2ce-447b-8902-f41bb0b213a1")
+			(uuid "5cdd402f-dd13-4b8c-b299-04dce5cd0afd")
 		)
 		(pin "2"
-			(uuid "7e8f34de-567c-4448-9310-11ea6b136b4c")
+			(uuid "41ea8ccb-68a9-4ba8-b99d-35259554c482")
 		)
 		(pin "3"
-			(uuid "d8757693-1d3e-4b5a-ac0a-4ce6405bec0a")
+			(uuid "50f1e576-01dc-4923-a313-9919b127cde4")
 		)
 		(pin "4"
-			(uuid "296f4dcf-4f63-4929-98c3-f96c765607ff")
+			(uuid "30f1e8f9-4f10-429c-b24c-5ce8acad387b")
 		)
 		(pin "5"
-			(uuid "502bc9ff-a8d1-4e75-b584-3bca91ea38bd")
+			(uuid "97546974-6c0e-49a5-a20f-ab4095f38560")
 		)
 		(instances
 			(project "altimetro"
@@ -12043,7 +12043,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3ecf916d-a5dd-4c3c-bc68-c54f86e6a07c")
+			(uuid "c2f2a03d-f65f-4514-adf5-4c6bf59dfc1b")
 		)
 		(instances
 			(project "altimetro"
@@ -12120,7 +12120,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d3281e5b-ccb7-43b3-9b1d-08bae5f5b762")
+			(uuid "e334a8cb-4e69-49b4-99fb-e6ac18b98cac")
 		)
 		(instances
 			(project "altimetro"
@@ -12197,7 +12197,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9328f047-4a4c-4cf1-8b8d-e9879963cedf")
+			(uuid "60c4bad1-1db3-41b1-8aa3-9e9299fd27c3")
 		)
 		(instances
 			(project "altimetro"
@@ -12273,10 +12273,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "8bd34b5a-f10f-4d57-ad48-1ed2908100be")
+			(uuid "55b0037d-9d15-44bf-8161-4835da4ffc77")
 		)
 		(pin "2"
-			(uuid "14707ccd-25aa-434a-b22d-62e42983e188")
+			(uuid "eb80d9e5-4ef6-4db2-95e3-f45638ff6c36")
 		)
 		(instances
 			(project "altimetro"
@@ -12352,28 +12352,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "fabe27f0-f29c-4a4b-bc47-45f75a8c5e46")
+			(uuid "d4c86b11-ad50-4d5c-9170-e809c0c6655b")
 		)
 		(pin "2"
-			(uuid "65143826-884d-44c8-b711-e8e82d2dd3f2")
+			(uuid "801decc2-6193-4b00-b882-b995f98ded9d")
 		)
 		(pin "3"
-			(uuid "cce225e7-04e1-439f-b8fc-540afccef3af")
+			(uuid "17cc8f89-04f8-4997-bd7a-c4d2cd47f164")
 		)
 		(pin "4"
-			(uuid "11dbbb10-cb91-4020-bbe1-ae4c083e4bd7")
+			(uuid "bdf79984-c75d-44c8-9980-6f58d9f0e10c")
 		)
 		(pin "5"
-			(uuid "891d3e80-5d1a-4224-b4e9-82e4f9534ef3")
+			(uuid "07943aec-7549-437c-a527-8d8f0ece4dd5")
 		)
 		(pin "6"
-			(uuid "cc82120a-c618-43e8-97be-4857944249c7")
+			(uuid "d23b4bee-e3d3-4111-a7b1-c25b279fae91")
 		)
 		(pin "7"
-			(uuid "f11ee986-3d56-4552-aeee-fe7c1f8405f6")
+			(uuid "c2c9b11d-e7ef-410e-9d59-082e197fd0dd")
 		)
 		(pin "8"
-			(uuid "8c132ec1-d38e-4cf8-a7a2-db7c457a7833")
+			(uuid "5f6104bd-7f14-44da-8826-f9c67bba9e59")
 		)
 		(instances
 			(project "altimetro"
@@ -12449,10 +12449,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "64eb7066-ba0d-4b15-a950-3f92f76cefd9")
+			(uuid "268c03a3-e66e-41ae-90e4-37a2a1153d9d")
 		)
 		(pin "2"
-			(uuid "f44dcce0-a50c-4588-bad4-56376019991b")
+			(uuid "1836e2da-d03b-471c-af65-8db219e4f757")
 		)
 		(instances
 			(project "altimetro"
@@ -12530,10 +12530,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "890ff7da-66ee-4802-b697-290d17e62293")
+			(uuid "72e6fed7-9af4-4e92-abb6-42e03091a4d3")
 		)
 		(pin "2"
-			(uuid "5feea9c9-f192-4bdb-ac43-ed2ec19ae83f")
+			(uuid "1cb5b4f5-6b96-49c5-9e92-ca40c291ee95")
 		)
 		(instances
 			(project "altimetro"
@@ -12610,7 +12610,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0693c085-68b7-43ed-827d-a1b606b42044")
+			(uuid "de4720fa-c257-4c0e-8631-e249fd66c3e1")
 		)
 		(instances
 			(project "altimetro"
@@ -12687,7 +12687,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "985559db-c1c3-45eb-b0d1-77247eb58466")
+			(uuid "51aec6b2-0c39-4cfb-817a-7878c368b4a1")
 		)
 		(instances
 			(project "altimetro"
@@ -12765,22 +12765,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2146a5c-d146-4923-a12f-95c3d804dd56")
+			(uuid "ca7a57ce-93a8-4a4d-8242-f4e9f6a550a7")
 		)
 		(pin "2"
-			(uuid "75743dff-458a-4725-8700-2d54d64da913")
+			(uuid "9ffded24-2e1e-4570-a85d-adeeb88991d1")
 		)
 		(pin "3"
-			(uuid "343dada9-f71b-46d6-9ac1-1a14e6009ed1")
+			(uuid "2a607d14-c949-4bbe-b711-0cd7893ed18f")
 		)
 		(pin "4"
-			(uuid "2fb141f6-99fc-4369-9348-34768e4a7812")
+			(uuid "eb21ff63-1e3b-49c9-a039-96f132c378ba")
 		)
 		(pin "5"
-			(uuid "e79155d3-6370-4623-ba89-63b5d914bf2b")
+			(uuid "edc606b0-2ac6-4779-80cb-f5446b336af3")
 		)
 		(pin "SH"
-			(uuid "38d54a29-f523-4444-8c74-f88394dc0cc3")
+			(uuid "330de900-31c8-438c-813a-6f9d36bf9ced")
 		)
 		(instances
 			(project "altimetro"
@@ -12861,13 +12861,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa59b63c-1f6f-411f-b7d1-44ae95c4b749")
+			(uuid "4b68e52b-b6e7-4157-951f-ba981af400c5")
 		)
 		(pin "2"
-			(uuid "5822839d-f642-4c39-af7e-a8f2899769ef")
+			(uuid "a346e223-7333-4331-8d52-f8f2b7afc3b5")
 		)
 		(pin "3"
-			(uuid "defb6578-aec3-4711-9e12-c72ea1cbd2d8")
+			(uuid "9a7c20c6-52cb-4e91-bbff-82fcd9f1662c")
 		)
 		(instances
 			(project "altimetro"
@@ -12945,10 +12945,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc59ed5e-04fb-40e4-a02a-3ce17a280f3c")
+			(uuid "15a7033c-6755-4514-92b0-eaf745e0ce2c")
 		)
 		(pin "2"
-			(uuid "e018346a-8c70-4808-9e0e-496e2b958150")
+			(uuid "cf7954d5-7f79-4126-a076-5a61d9b68d24")
 		)
 		(instances
 			(project "altimetro"
@@ -13025,7 +13025,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b66c8f19-262d-44b7-a95b-95cfe20fc304")
+			(uuid "63759c6a-f6a8-4b0c-955d-6a93b2fa90e9")
 		)
 		(instances
 			(project "altimetro"
@@ -13102,7 +13102,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "632faa55-7e37-4e01-9b6a-8ad319e00934")
+			(uuid "4a51d669-f9a1-49c5-a300-4f6e9759ebbe")
 		)
 		(instances
 			(project "altimetro"
@@ -13179,7 +13179,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "98ad7f24-106e-44b8-a4af-c1a35f57cd20")
+			(uuid "f5a495f7-4dbe-4311-8763-fcd5a4e45285")
 		)
 		(instances
 			(project "altimetro"
@@ -13257,10 +13257,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b446966a-0001-41fd-b4d9-cedb948a2019")
+			(uuid "6c3dbcf3-e2b9-4cf2-ab69-6b8a6850b762")
 		)
 		(pin "2"
-			(uuid "8797c46c-e212-4600-a242-cda894e69042")
+			(uuid "c2c07c46-1404-4231-a438-add025a61e90")
 		)
 		(instances
 			(project "altimetro"
@@ -13337,7 +13337,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b470b13-ea46-4bfc-bb7f-c8503b44df01")
+			(uuid "f99d7e94-7969-43ff-a470-799061bec091")
 		)
 		(instances
 			(project "altimetro"
@@ -13415,10 +13415,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d2230016-88d1-41a2-be5b-ff6315ab3a01")
+			(uuid "bcf05dd4-2dc2-4136-bd71-55314af9275e")
 		)
 		(pin "2"
-			(uuid "8a662a46-d946-406d-acc6-7a680dc6cd24")
+			(uuid "ef6a9228-f23d-4f5f-b48a-4efbd796fd17")
 		)
 		(instances
 			(project "altimetro"
@@ -13496,10 +13496,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "52a54bfb-a894-4a18-a9c2-72246123017c")
+			(uuid "df281b63-eb04-4e8e-8c40-dc4f829c2d79")
 		)
 		(pin "2"
-			(uuid "e6831199-31c8-414b-b738-f4f2046bc264")
+			(uuid "5b75a99b-0ef6-4886-b9ce-73512487fb4a")
 		)
 		(instances
 			(project "altimetro"
@@ -13580,22 +13580,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "b324f445-565e-44ca-9c8c-c4de036bfcf6")
+			(uuid "d638ae47-5470-4ea7-a363-c35a430995e3")
 		)
 		(pin "2"
-			(uuid "3f9f49ea-41cb-4ea3-9a32-dfbfa0322fe6")
+			(uuid "5e0cc78f-1438-4f88-b1a0-0df123c1eadd")
 		)
 		(pin "3"
-			(uuid "4258550c-8d17-4608-a4a7-80453d20fc5e")
+			(uuid "27a504b9-21de-4117-b260-52cb8c23c7d8")
 		)
 		(pin "4"
-			(uuid "05d16276-811b-4c9c-a0e1-98b8e91a3524")
+			(uuid "8691eca7-0a27-41f0-a9bc-99e3ad268349")
 		)
 		(pin "5"
-			(uuid "4860d1b2-7e19-4d06-af41-42ff5c534e7b")
+			(uuid "426a1cdb-174a-4005-8a8f-2d05a1d52be1")
 		)
 		(pin "6"
-			(uuid "cc30a826-9466-4443-b280-f1b91618ac2d")
+			(uuid "132c8549-11c5-45c7-8b01-d4badb476c2c")
 		)
 		(instances
 			(project "altimetro"
@@ -13672,7 +13672,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1e19ffe2-b941-482f-8388-c622c1754788")
+			(uuid "d1d73197-b734-4b5f-91ce-582ff079cc0d")
 		)
 		(instances
 			(project "altimetro"
@@ -13749,7 +13749,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d5e02f5-dbc0-4f9a-bb48-aa3182a315f9")
+			(uuid "d0e303db-f177-48ff-819e-6e7d497bdae1")
 		)
 		(instances
 			(project "altimetro"
@@ -13826,7 +13826,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "60736882-6d00-40be-baac-84f3497eb7b5")
+			(uuid "1086daa6-5a2a-4ecf-ad20-1fa940eb91e3")
 		)
 		(instances
 			(project "altimetro"
@@ -13903,7 +13903,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "04772432-f840-4628-808f-e4c36f938c0c")
+			(uuid "0bd1c58c-1bd3-4f0d-bda7-ff6891c3aa08")
 		)
 		(instances
 			(project "altimetro"
@@ -13980,7 +13980,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf75648a-1683-412c-a981-db3398c55638")
+			(uuid "af272af6-448a-40de-b6f4-c100559b1249")
 		)
 		(instances
 			(project "altimetro"
@@ -14056,10 +14056,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b18ef296-819f-4acc-8481-b66855794238")
+			(uuid "eea960f4-5e13-41a1-8ad0-098a4fa7e570")
 		)
 		(pin "2"
-			(uuid "8a96cf7a-5648-46f7-bd03-05ab42e40edd")
+			(uuid "54edb7dc-0cce-4bfc-8e9c-636cdb76c438")
 		)
 		(instances
 			(project "altimetro"
@@ -14136,7 +14136,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2bf79dd2-4c66-42a4-a31b-ce054a9d984a")
+			(uuid "64ee242c-4bde-4809-9153-cd51c6677c21")
 		)
 		(instances
 			(project "altimetro"
@@ -14213,7 +14213,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d6da3dbf-2e0a-44c8-8d3a-41b44c948ca7")
+			(uuid "1d53176d-0b4d-4fbb-b944-893ae0c428dc")
 		)
 		(instances
 			(project "altimetro"
@@ -14290,7 +14290,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4abf0db6-316b-4a31-b67e-942af005275a")
+			(uuid "3b7bb8da-3ce9-4377-a2e5-b0fdbb51bce6")
 		)
 		(instances
 			(project "altimetro"
@@ -14368,10 +14368,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "85a85adb-7683-41c1-b8cf-6dce72431b28")
+			(uuid "6236c0d9-7a6d-4886-a22b-843f2eeddd41")
 		)
 		(pin "2"
-			(uuid "5eeb57e4-aab0-4785-a43a-889b11d10608")
+			(uuid "6bb254c5-0e56-48c8-ad71-acff4392f213")
 		)
 		(instances
 			(project "altimetro"
@@ -14448,7 +14448,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8a3fe649-2687-4021-9553-6ff24a25bca5")
+			(uuid "9acbec2f-868d-4bf2-b740-53237c4c6c7f")
 		)
 		(instances
 			(project "altimetro"
@@ -14525,7 +14525,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "aaac8d42-5170-43b8-9c92-4437400bb35d")
+			(uuid "e2d9c00e-77f6-4fac-9410-30ab4dc46944")
 		)
 		(instances
 			(project "altimetro"
@@ -14602,13 +14602,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "acb6c1d6-6e96-4adc-acf7-62da848ad921")
+			(uuid "6daf3149-7a8c-419c-b344-d9fdebc1d2fa")
 		)
 		(pin "2"
-			(uuid "91e844aa-98fc-47a4-9393-baf3beebd8fc")
+			(uuid "20864b0f-a52c-44bc-8d48-1434ebfd3125")
 		)
 		(pin "3"
-			(uuid "5ca10199-4516-4435-b9fd-cccb0504aadb")
+			(uuid "f7380971-d596-4f32-a7bd-9ef6eb158664")
 		)
 		(instances
 			(project "altimetro"
@@ -14686,10 +14686,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4f48ebc5-2bb5-448a-bdf6-82b1032d3520")
+			(uuid "4f8685f6-aaf0-456a-bb50-5dffc86fd791")
 		)
 		(pin "2"
-			(uuid "fd7d168b-0d65-4be7-a5c9-42af1e24641e")
+			(uuid "6c832b74-7761-4840-8405-5d002ac7be47")
 		)
 		(instances
 			(project "altimetro"
@@ -14767,10 +14767,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b18d5ce9-a9be-45d3-83e7-848c8c12091c")
+			(uuid "d9990c92-f8f2-4c43-9776-ee5cbdff78ab")
 		)
 		(pin "2"
-			(uuid "56fedd85-62ba-4c89-81cf-5678e481227b")
+			(uuid "e00274e0-aa49-4a22-8756-f6467decb8e1")
 		)
 		(instances
 			(project "altimetro"
@@ -14846,28 +14846,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a8404d7-edc0-4210-ad13-ffbded4715fa")
+			(uuid "700359a7-3288-4918-a286-68f114d0c796")
 		)
 		(pin "2"
-			(uuid "5b2d9e44-0d75-4863-a61a-8891a906db70")
+			(uuid "e221d638-50c6-4c95-9bd0-6de378d5d6af")
 		)
 		(pin "3"
-			(uuid "5c5cee75-f8a5-4a7d-8e0c-cdc1363d581c")
+			(uuid "94f4a293-8f0f-45e8-95f8-8efd0640ce5a")
 		)
 		(pin "4"
-			(uuid "e29dadfb-e7db-46a3-bb53-d42debf0f3d0")
+			(uuid "4aabf188-b761-49f4-b934-ca07557b63b2")
 		)
 		(pin "5"
-			(uuid "c3587788-5db5-4f6b-ada8-c0bac2ee7248")
+			(uuid "83e71139-c852-4597-b2da-132e98b0c78e")
 		)
 		(pin "6"
-			(uuid "c1e138e5-9ecc-4930-b1ea-452b5709e5ad")
+			(uuid "ae2fc921-df28-46ca-990c-c789cb292f16")
 		)
 		(pin "7"
-			(uuid "b925ba37-985f-44e8-a64b-2317de694b79")
+			(uuid "3d32e071-f566-442c-a4bf-ed28704f080e")
 		)
 		(pin "8"
-			(uuid "0cf97d96-dfef-4b5d-abfe-05c8148347b0")
+			(uuid "3539c4d9-a6d2-4e6e-acdc-f9a13a969210")
 		)
 		(instances
 			(project "altimetro"
@@ -14943,10 +14943,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e67a74f3-4d12-440e-a49c-bd55bc867c62")
+			(uuid "0df21a83-fd50-40ff-b718-75300be5c878")
 		)
 		(pin "2"
-			(uuid "4708e593-de13-4fd5-a5fe-e2885f5ee9af")
+			(uuid "b5380bc7-a700-47e3-b842-c22cd93cb40d")
 		)
 		(instances
 			(project "altimetro"
@@ -15023,7 +15023,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8bf57bed-5a2f-4471-85b8-7c75d47b5098")
+			(uuid "c28940b0-8e63-4a9c-8cf6-702f61133395")
 		)
 		(instances
 			(project "altimetro"
@@ -15100,7 +15100,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "15a2ed57-d775-491f-b0d5-ed49d1136654")
+			(uuid "63d04cca-b3d9-44f5-a928-64d5481f36bd")
 		)
 		(instances
 			(project "altimetro"
@@ -15178,7 +15178,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b74e33db-0ffa-4fbc-ac8f-ad6247dc253b")
+			(uuid "bfe99a8b-71e5-4b36-8bc1-8c12007c1280")
 		)
 		(instances
 			(project "altimetro"
@@ -15254,10 +15254,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "22ef1b16-aee3-4ff4-928c-9189d12863f5")
+			(uuid "33e05908-9352-4f9c-9ee0-371209395096")
 		)
 		(pin "2"
-			(uuid "9d08e453-b444-4bb4-89f0-0291eb54d020")
+			(uuid "a14e84cf-5c0e-4426-819a-57d3f074a373")
 		)
 		(instances
 			(project "altimetro"
@@ -15334,7 +15334,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "55f7e0d0-c577-4034-902c-ca5c42ac5f5d")
+			(uuid "b169a4cb-b24a-4359-8a65-583ef47d2866")
 		)
 		(instances
 			(project "altimetro"
@@ -15411,7 +15411,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "04fc2239-ce40-48d4-8e94-d847cc238c9c")
+			(uuid "b77bebba-7fe8-4450-85f7-d10c115a7f31")
 		)
 		(instances
 			(project "altimetro"
@@ -15488,7 +15488,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "16d03d17-8825-4708-a4b0-22fe2c8bac38")
+			(uuid "5e9502f0-9a41-40e2-b2ee-dbe6a4eb22ca")
 		)
 		(instances
 			(project "altimetro"
@@ -15564,10 +15564,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7acacfef-4f8e-4df9-8b2c-b56c1bd86f30")
+			(uuid "e12fed02-ee6c-48f4-95ea-926a12c59859")
 		)
 		(pin "2"
-			(uuid "88251a88-b52a-4139-b309-a13f0034cdbe")
+			(uuid "32fa8f8e-aa3a-40d6-b9ec-59f380dce5bf")
 		)
 		(instances
 			(project "altimetro"
@@ -15609,7 +15609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal"
 			(at 40.64 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -15643,10 +15643,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "106b204b-f53f-41ea-afe4-df1a3df58635")
+			(uuid "073055d2-da53-4663-a035-53c1cbca1f60")
 		)
 		(pin "2"
-			(uuid "b7f43419-661b-44ae-878a-4ef25978b8ec")
+			(uuid "bfe1f230-bd6f-44c5-a673-e6f4a309c14e")
 		)
 		(instances
 			(project "altimetro"
@@ -15723,7 +15723,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b504f45-f53d-4a2d-a00b-50c4bac091c5")
+			(uuid "1aa23990-ec42-4b0a-b358-4a27049e1857")
 		)
 		(instances
 			(project "altimetro"
@@ -15799,10 +15799,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e9436e24-6bd0-4202-a1bf-604ce1dbeb00")
+			(uuid "04aad759-60b4-4076-b683-97491e7ecfa6")
 		)
 		(pin "2"
-			(uuid "00396c99-5fe7-49b0-b320-6bffd112cef6")
+			(uuid "b3fffc93-f4de-4223-8615-c8d4437db1d2")
 		)
 		(instances
 			(project "altimetro"
@@ -15880,10 +15880,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9209322-c91f-4f33-8bdb-a2f7e9de90d7")
+			(uuid "d24aa477-a7f3-47c1-9a2c-1a72b1ae10dd")
 		)
 		(pin "2"
-			(uuid "0bbf224e-9557-47c5-ba8e-613bd11f6713")
+			(uuid "d6944fe9-2b00-4d31-86c1-b297266d860e")
 		)
 		(instances
 			(project "altimetro"
@@ -15960,7 +15960,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c833891-da0f-4d45-8ab2-e7c0b1acd434")
+			(uuid "9bcc5828-78af-4f00-8bba-1790ec2c24be")
 		)
 		(instances
 			(project "altimetro"
@@ -16037,7 +16037,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "447ed2f1-6a76-4b41-9cee-81068d067e00")
+			(uuid "f4621634-d1c9-4fca-a7cc-82bd50b6d115")
 		)
 		(instances
 			(project "altimetro"
@@ -16115,10 +16115,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "546ee33c-a9b9-4cda-a3da-bf4de165cf1f")
+			(uuid "de1da1cf-32db-4bc6-8741-7e33b20d9acc")
 		)
 		(pin "2"
-			(uuid "55a1ea43-97c5-46a1-beeb-04a662bdb93e")
+			(uuid "c571e847-a958-4f32-a5cc-dc9cc837342a")
 		)
 		(instances
 			(project "altimetro"
@@ -16195,7 +16195,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fcff82d1-e637-4281-8f62-e53c4c83e7f9")
+			(uuid "3cab6700-e269-428b-bf60-446e88c0d1e4")
 		)
 		(instances
 			(project "altimetro"
@@ -16271,10 +16271,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e0d8475-ec3c-4579-aa04-ae507d8b9d12")
+			(uuid "3134b569-583c-4df7-8ea2-04836700362d")
 		)
 		(pin "2"
-			(uuid "5f245580-5ff7-459f-bf7d-75d355cae9a4")
+			(uuid "2761c026-9061-4aa2-860f-8d5188a2531b")
 		)
 		(instances
 			(project "altimetro"
@@ -16350,10 +16350,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b58ab0bd-5ac2-4410-a704-2be65a02600e")
+			(uuid "55e08b39-3dbf-46fc-a077-a841653709a5")
 		)
 		(pin "2"
-			(uuid "fa70bcb1-e9e5-4c81-b39c-cdfc3cf0ca83")
+			(uuid "811c99d7-0cfa-4f12-8167-1d31604f6393")
 		)
 		(instances
 			(project "altimetro"
@@ -16429,10 +16429,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "af5cce8f-aff0-462c-a721-6d5764e0899d")
+			(uuid "0e2383b4-11bc-44b8-86b0-897f503cba3a")
 		)
 		(pin "2"
-			(uuid "1bbf31a6-8013-4515-9f52-720c5c1b3408")
+			(uuid "76a153a5-7f54-4ccc-9bcf-2eb9f4eaf3b4")
 		)
 		(instances
 			(project "altimetro"
@@ -16508,10 +16508,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b452c236-9798-44bb-b921-ddc907bd8c30")
+			(uuid "ed49e62e-c727-42c7-afa0-0394fe853feb")
 		)
 		(pin "2"
-			(uuid "728188a9-475f-48fa-baea-136bd86fd67a")
+			(uuid "56cf9d1a-83cc-49cd-bb1e-1bc35bad4a44")
 		)
 		(instances
 			(project "altimetro"
@@ -16587,10 +16587,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d11dc3ed-c0f9-4eac-92eb-1ba3915b2777")
+			(uuid "199b8846-d769-4ff2-8c04-74a8e60fe08b")
 		)
 		(pin "2"
-			(uuid "87fe9971-12a4-4481-a3c6-6d1b3501016c")
+			(uuid "f9a10d89-2364-4c52-bde5-4b25b0dd851e")
 		)
 		(instances
 			(project "altimetro"
@@ -16666,10 +16666,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e903ffb8-bbba-4b3d-a23d-87885968b97f")
+			(uuid "4f63cdb4-e689-49f1-9bc7-efdc9c9c90ab")
 		)
 		(pin "2"
-			(uuid "f5e8e3d7-5cb0-450d-9d06-3b3ce3b3d2e1")
+			(uuid "6a006964-ed22-4d1d-92d6-f56cb4517455")
 		)
 		(instances
 			(project "altimetro"
@@ -16745,10 +16745,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc7c1d31-d571-4cdf-9662-8825273daaa4")
+			(uuid "81ff7cc0-26c7-442c-a858-640c993d08e8")
 		)
 		(pin "2"
-			(uuid "6cc048d1-c18a-4c62-9029-6855546b6fc8")
+			(uuid "cd133110-5655-4e0d-9fa6-945195f0bd3f")
 		)
 		(instances
 			(project "altimetro"
@@ -16825,7 +16825,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3de91aa4-4f65-45ca-9485-49ef55bdee21")
+			(uuid "f286bb9c-6897-47a5-87bd-1d43f6bdd806")
 		)
 		(instances
 			(project "altimetro"
@@ -16902,7 +16902,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "bb23eb7d-b516-4206-a7a7-807dc067b665")
+			(uuid "e02ef4fa-d895-4a2b-819e-879722ada6e6")
 		)
 		(instances
 			(project "altimetro"
@@ -16980,7 +16980,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d63edf7-2447-482c-beee-d5db46a546be")
+			(uuid "e51ea95c-15d1-4257-ac59-62b00c12f81a")
 		)
 		(instances
 			(project "altimetro"
@@ -17022,7 +17022,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal"
 			(at 40.64 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -17056,10 +17056,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "264e3653-5017-403f-8ec6-f63ec42d78ac")
+			(uuid "32e0539e-56a5-4972-bf06-ae1dfd34c1ec")
 		)
 		(pin "2"
-			(uuid "ac17f25d-75eb-4998-af2f-f426fefd76f8")
+			(uuid "0441e873-d5aa-42a9-a55f-4afc314da22b")
 		)
 		(instances
 			(project "altimetro"
@@ -17136,7 +17136,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "42da783e-6293-4660-a8e5-3dc03848d578")
+			(uuid "3721d5c6-aea9-49bd-8cb3-ba95c9a63f4c")
 		)
 		(instances
 			(project "altimetro"
@@ -17213,7 +17213,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a846d387-bda6-4086-acf6-3d4cb3a15575")
+			(uuid "0ab3333e-2c87-4d08-bb55-cb033aef58d7")
 		)
 		(instances
 			(project "altimetro"

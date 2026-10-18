@@ -41,7 +41,7 @@ C0603 = "Capacitor_SMD:C_0603_1608Metric"
 C0805 = "Capacitor_SMD:C_0805_2012Metric"
 SOT23 = "Package_TO_SOT_SMD:SOT-23"
 SOD123 = "Diode_SMD:D_SOD-123"
-TBLOCK = "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+TBLOCK = "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal"
 
 # ---- B1: alimentacao e protecao -------------------------------------------
 B1 = (40.64, 45.72)
@@ -357,6 +357,8 @@ def main():
             sym, base = collect_symbol(libdir, key[0], key[1])
             geom[key] = pins_of(base)
             LIBPROPS[key] = lib_props(sym)
+            IN_BOM[key] = not any(isinstance(q, list) and q[:2] == ["in_bom", "no"]
+                                  for q in list(sym) + list(base))
 
     # mapa pino -> net; valida cobertura total
     pinnet = {}
@@ -524,6 +526,7 @@ def main():
 
 
 LIBPROPS = {}   # (lib, simbolo) -> {campo: (x, y, angulo, effects)}
+IN_BOM = {}     # (lib, simbolo) -> False quando a biblioteca marca (in_bom no), ex. jumper de solda
 
 
 def lib_props(sym):
@@ -564,7 +567,8 @@ def sym_instance(c, u, hide_ref=False, hide_value=False):
            '\t\t(at %s %s %s)' % (c["x"], c["y"], c["rot"]),
            '\t\t(unit 1)',
            '\t\t(exclude_from_sim no)',
-           '\t\t(in_bom %s)' % ("no" if c["ref"].startswith("#") else "yes"),
+           '\t\t(in_bom %s)' % ("no" if c["ref"].startswith("#")
+                                  or not IN_BOM.get((c["lib"], c["sym"]), True) else "yes"),
            '\t\t(on_board %s)' % ("no" if c["ref"].startswith("#") else "yes"),
            '\t\t(dnp no)',
            '\t\t(uuid "%s")' % u]

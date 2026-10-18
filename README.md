@@ -11,7 +11,10 @@ Arquivos:
 |---|---|
 | `altimetro.kicad_sch` | esquemático, folha única A2, formato nativo KiCad 10 |
 | `altimetro.kicad_pro` | projeto (inclui netclass `PIRO` de 1,0 mm) |
+| `altimetro.kicad_pcb` | placa de 2 camadas, 66 × 26 mm, roteada |
+| `altimetro.kicad_dru` | regra de DRC do USB que avança sobre a borda |
 | `altimetro.pdf` | plotagem do esquemático |
+| `fabricacao/` | Gerber + furação (zip), posição SMD, BOM, desenho de montagem, renders |
 | `bom.csv` | lista de materiais exportada pelo KiCad, 54 componentes |
 | `gerador/` | scripts que geram e verificam o esquemático |
 
@@ -126,6 +129,61 @@ D1/D2/D3 estão desenhados com o catodo à esquerda (orientação padrão do sí
 sem espelhamento). Os rótulos deixam o sentido claro: em D1, `VBAT` entra pelo
 anodo à direita e `VSYS` sai pelo catodo à esquerda.
 
+## Placa
+
+66 × 26 mm, 2 camadas, FR-4 1,6 mm, montagem SMD só no topo. Dois furos M3 nas
+pontas, sem cobre (não ligam a placa ao suporte). Regras compatíveis com
+fabricação padrão: trilha mínima 0,15 mm, folga 0,15 mm, via 0,6/0,3 mm.
+
+| netclass | nets | trilha | folga |
+|---|---|---|---|
+| `PIRO` | `VBAT`, `PYRO_A`, `PYRO_B` | 0,8 mm | 0,3 mm |
+| `POWER` | `+3V3`, `VSYS`, `VBUS`, `GND` | 0,4 mm | 0,2 mm |
+| Default | sinais | 0,25 mm | 0,2 mm |
+
+Disposição: bornes na borda inferior (entrada do fio para fora), USB na borda
+superior esquerda, alimentação à esquerda, MCU no centro com os desacoplamentos
+colados aos pinos, flash e barômetro em cima à direita (longe do regulador),
+buzzer embaixo à direita. Plano de GND nas duas faces, costurado por vias.
+
+Decisões de layout:
+
+- **Bornes de 3,5 mm** (Metz Connect RT06302HBWC, 10 A, 0,14–1,5 mm²) em vez dos
+  de 5,08 mm: metade da área, e mesma série de parafuso.
+- **Pads SMD com ligação sólida ao plano**, alívio térmico só nos passantes.
+  Importa para o GND do protetor de ESD (U5) e para a fonte de Q1/Q2, por onde
+  volta a corrente de disparo. O pad de GND do header SWD também é sólido: no
+  passo de 1,27 mm não cabem dois raios térmicos.
+- **Faixa sem vias acima de cada borne** (área de regra) para os rótulos
+  `+BAT-`, `APO`, `PRI` — furo de via corta a serigrafia.
+- Referências que não cabem sem cobrir pad, via ou outra peça ficam fora da
+  serigrafia e aparecem no desenho de montagem (`fabricacao/altimetro-montagem.pdf`).
+  O verso traz legenda completa dos bornes e a pinagem do SWD.
+
+### Gerar a placa
+
+```sh
+FREEROUTING=/caminho/freerouting-2.4.1.jar JAVA=/caminho/java25/bin/java gerador/fazer_pcb.sh
+```
+
+Requer KiCad 10 (módulo Python `pcbnew`), Java 25+ e Freerouting 2.4.1. O script
+posiciona (conectores e CIs em posição fixa; passivos pelo lugar livre mais
+perto do pino que atendem), exporta DSN com as larguras por classe, autorroteia,
+cria planos e costura, posiciona a serigrafia e roda o DRC com paridade de
+esquemático. **Só grava no projeto se o DRC passar sem nenhuma violação.** O
+Freerouting não é determinístico: cada execução dá um traçado diferente, todos
+verificados pelo mesmo DRC.
+
+### Antes de encomendar
+
+- Rodar o DRC no GUI e olhar a placa: o roteamento é automático. Funcional e
+  verificado, mas vale revisar os laços de disparo e o USB a olho.
+- Para montagem na JLCPCB/PCBWay: a BOM não tem códigos de fornecedor (LCSC), e
+  o arquivo de posição usa a rotação do KiCad — alguns encapsulamentos (SOT-23,
+  SOT-89) precisam de correção de rotação no visualizador do fabricante.
+- O buzzer puxa ~100 mA de pico do 3V3 a 4 kHz. O firmware não deve tocá-lo
+  enquanto mede pressão para referência de solo.
+
 ## Notas para o layout da PCB
 
 1. O laço de disparo (J1 → C1 → J4/J5 → Q1/Q2 → GND) carrega alguns ampères por
@@ -160,7 +218,7 @@ instalado e só grava o resultado se tudo passar:
 
 ## O que não está feito
 
-- PCB, firmware e certificação.
+- Firmware e certificação.
 - Proteção contra inversão de polaridade da bateria: D1 protege só o ramo de
   3V3. Os bornes pirotécnicos estão em `VBAT` direto, então bateria invertida
   polariza Q1/Q2 pelo diodo de corpo. Se isso preocupar, um P-FET em série na
