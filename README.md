@@ -5,6 +5,13 @@ principal), equivalente em função ao Altus Metrum EasyMini: sensor barométric
 registro de voo em flash, dois canais pirotécnicos com teste de continuidade,
 download por USB. Sem GPS, sem acelerômetro, sem telemetria.
 
+> **Defeito crítico em aberto:** `FIRE_B` está no PA9, que o bootloader da ROM
+> leva a nível alto — o canal principal dispara se a placa entrar no bootloader
+> (JP1 fechado ou flash vazia) com bateria e ignitor ligados. Até corrigir,
+> grave firmware só com USB, sem bateria. Detalhes em [SINAIS.md](SINAIS.md).
+
+Descrição de cada sinal (função, conexões, tensões, notas de firmware): [SINAIS.md](SINAIS.md).
+
 Arquivos:
 
 | arquivo | conteúdo |
@@ -80,10 +87,11 @@ com a flash. Resolução de 20 cm e conversão de 1 ms; limite de 1200 mbar e
 as duas conversões nunca são concorrentes: o firmware lê o barômetro e só depois
 grava a amostra.
 
-**W25Q16JV (16 Mbit).** 2 MByte dão ~24 h de voo a 100 Hz com amostra de 8
-bytes — na prática, dezenas de voos sem apagar. `WPn` e `HOLDn` sobem por R4/R5
-de 10 k em vez de ir direto a 3V3, para que um firmware futuro possa usar modo
-quad sem alterar a placa.
+**W25Q16JV (16 Mbit).** 2 MByte dão ~44 min de registro a 100 Hz com amostra de
+8 bytes (800 B/s) — de 10 a 20 voos de 2–4 min sem apagar; mais se a taxa cair
+depois do apogeu. `WPn` e `HOLDn` ficam em nível alto por R4/R5 (10 k), o que
+desativa a proteção de escrita por hardware e a pausa. Esses pinos não chegam ao
+MCU, então a flash opera só em SPI simples.
 
 **LDO MCP1703 em SOT-89, não SOT-23.** Com 16 V na entrada e 25 mA de consumo o
 regulador dissipa (16 − 3,3) × 0,025 = 0,32 W. Em SOT-23 (θ_JA ≈ 250 °C/W) isso
