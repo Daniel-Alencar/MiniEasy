@@ -161,7 +161,7 @@ abaixo valem para A; para B troque Q1→Q2, J4→J5, R8–R11→R12–R15, C16�
 PA8→PA9, PA0→PA1.
 
 ```
-VBAT ── J4.1 ──[ ignitor ]── J4.2 = PYRO_A ──┬── Q1 dreno        Q1 fonte ── GND
+VBAT ── J4.1 ──[ ignitor ]── J4.2 = PYRO_A ──┬── Q1 dreno      Q1 fonte ── GND
                                              └── R10 100k ──┬── SNS_A ── PA0
 FIRE_A (PA8) ── R8 100R ── GATE_A ── Q1 gate                ├── R11 10k ── GND
                               └── R9 100k ── GND            └── C16 10n ── GND

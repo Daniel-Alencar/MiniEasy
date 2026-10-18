@@ -10,7 +10,11 @@ download por USB. Sem GPS, sem acelerômetro, sem telemetria.
 > (JP1 fechado ou flash vazia) com bateria e ignitor ligados. Até corrigir,
 > grave firmware só com USB, sem bateria. Detalhes em [SINAIS.md](SINAIS.md).
 
-Descrição de cada sinal (função, conexões, tensões, notas de firmware): [SINAIS.md](SINAIS.md).
+Documentos:
+
+- [SINAIS.md](SINAIS.md) — cada sinal: função, conexões, tensões, notas de firmware.
+- [ALIMENTACAO.md](ALIMENTACAO.md) — por que o bloco de alimentação é assim: o "OU"
+  de diodos, a escolha do regulador, o reservatório de disparo e o desacoplamento.
 
 Arquivos:
 
